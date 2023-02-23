@@ -1,0 +1,29 @@
+.header {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &-logo {}
+
+        &-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__item {}
+        }
+
+        .button {
+            
+            &:hover {
+                background: linear-gradient(to left, rgba(73, 104, 234, 1) 0%, rgba(70, 174, 242, 1) 100%);
+            }
+        }
+    }
+}
