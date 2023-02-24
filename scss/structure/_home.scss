@@ -27,7 +27,9 @@
 
             &__eth,
             &__blue,
-            &__orange {
+            &__orange,
+            &__x,
+            &__btc {
                 position: absolute;
             }
 
@@ -50,6 +52,24 @@
                 height: auto;
                 bottom: -10%;
                 right: 25%;
+            }
+
+            &__btc {
+                width: 10%;
+                height: auto;
+                bottom: 10%;
+                right: -15%;
+            }
+
+            .circle {
+                position: relative;
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
 
@@ -95,6 +115,14 @@
                 transform: translateX(-50%);
                 opacity: .5;
                 z-index: -1;
+            }
+
+            &__x {
+                position: absolute;
+                width: 4%;
+                height: auto;
+                top: -5%;
+                right: 20%;
             }
         }
     }

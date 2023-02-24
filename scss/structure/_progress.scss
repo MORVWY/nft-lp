@@ -1,0 +1,27 @@
+.nft {
+    .progress {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            flex-basis: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &__title {
+                color: $light-pink-purple;
+                font-weight: 700;
+                font-size: 3.5rem;
+            }
+
+            &__description {
+                margin-top: 25px;
+                color: $grey-color;
+            }
+        }
+    }
+}

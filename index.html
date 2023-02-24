@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +9,17 @@
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header class="header">
         <nav class="nav wrapper">
             <div class="nav-logo"><a class="nav-logo__item" href="#">NFT</a></div>
             <ul class="nav-menu">
-                <li class="nav-menu__item">Minting</li>
-                <li class="nav-menu__item">About</li>
-                <li class="nav-menu__item">Collection</li>
-                <li class="nav-menu__item">Roadmap</li>
-                <li class="nav-menu__item">Team</li>
+                <li class="nav-menu__item"><a href="#mint">Minting</a></li>
+                <li class="nav-menu__item"><a href="">About</a></li>
+                <li class="nav-menu__item"><a href="">Collection</a></li>
+                <li class="nav-menu__item"><a href="">Roadmap</a></li>
+                <li class="nav-menu__item"><a href="">Team</a></li>
             </ul>
             <button class="nav-button button">Contact us</button>
         </nav>
@@ -25,24 +27,188 @@
 
     <main class="nft">
         <section class="nft-home home wrapper">
+
             <div class="home-title">
                 <h1 class="home-title__item">Supercharge your NFT Adventure</h1>
                 <p class="home-title__description">Find the right NFT collections to buy within the platform.</p>
-                <button class="home-title__button button">View in OPENSEA</button>
+                <a href="https://opensea.io/" target="_blank"><button class="home-title__button button">View in OPENSEA</button></a>
 
                 <img class="home-title__eth" src="images/home/icons/ethereum-01.png" alt="etherium image">
+                <img class="home-title__btc" src="images/home/icons/bitcoin-01.png" alt="bitcoin image">
                 <img class="home-title__blue" src="images/home/icons/circle-01.png" alt="blue circle image">
                 <img class="home-title__orange" src="images/home/icons/circle-03.png" alt="orange circle image">
             </div>
+
             <div class="home-images">
                 <img class="home-images__drop" src="images/home/main1.jpg" alt="drop image">
                 <img class="home-images__man" src="images/home/main2.jpg" alt="man image">
                 <img class="home-images__blop" src="images/home/blob.svg" alt="blop image">
                 <img class="home-images__blop-line" src="images/home/blob-dashed.svg" alt="blop lines image">
+
+                <img class="home-images__x" src="images/home/icons/x.png" alt="x image">
+            </div>
+
+        </section>
+
+        <section class="nft-investors investors wrapper">
+
+            <div class="investors__title">powered by amazing investors:</div>
+
+            <div class="investors-logos logos">
+                <a class="logos-link" href="https://www.activecampaign.com/" target=”_blank”><img
+                        class="logos-link__image" src="images\investors\active-campaign.svg"
+                        alt="active-campaign logo"></a>
+                <a class="logos-link" href="https://asana.com/" target=”_blank”><img class="logos-link__image"
+                        src="images\investors\asana.svg" alt="asana logo"></a>
+                <a class="logos-link" href="https://www.kickstarter.com/" target=”_blank”><img class="logos-link__image"
+                        src="images\investors\kickstarter.svg" alt="kickstarter logo"></a>
+                <a class="logos-link" href="https://www.mapbox.com/" target=”_blank”><img class="logos-link__image"
+                        src="images\investors\mapbox.svg" alt="mapbox logo"></a>
+                <a class="logos-link" href="https://www.microsoft.com/" target=”_blank”><img class="logos-link__image"
+                        src="images\investors\microsoft.svg" alt="microsoft"></a>
+            </div>
+
+        </section>
+
+        <div class="nft-divider">
+            <img class="nft-divider__image" src="images\divider-01.svg" alt="divider image">
+        </div>
+
+        <section class="nft-mint mint wrapper" id="mint">
+
+            <img class="mint__blue" src="" alt="">
+            <img class="mint__pink" src="" alt="">
+            <img class="mint__x" src="" alt="">
+
+            <h2 class="mint__title">How to mint</h2>
+
+            <div class="mint-card card">
+
+                <div class="card-item item">
+                    <img class="item__image" src="images\mint\icon-01.png" alt="card icon">
+
+                    <div class="item-text">
+                        <h3 class="item-text__title">Connect your wallet</h3>
+                        <p class="item-text__description">Use Trust Wallet, Metamask or any wallet to connect to the app.</p>
+                    </div>
+                </div>
+
+                <div class="card-item item">
+                    <img class="item__image" src="images\mint\icon-02.png" alt="card icon">
+
+                    <div class="item-text">
+                        <h3 class="item-text__title">Select your quantity</h3>
+                        <p class="item-text__description">Upload your NFTs and set a title, description and price.</p>
+                    </div>
+                </div>
+
+                <div class="card-item item">
+                    <img class="item__image" src="images\mint\icon-03.png" alt="card icon">
+
+                    <div class="item-text">
+                        <h3 class="item-text__title">Confirm transaction</h3>
+                        <p class="item-text__description">Earn ETH and BIT for all your NFTs that you sell on our marketplace.</p>
+                    </div>
+                </div>
+
+                <div class="card-item item">
+                    <img class="item__image" src="images\mint\icon-04.png" alt="card icon">
+
+                    <div class="item-text">
+                        <h3 class="item-text__title">Receive your NFTs</h3>
+                        <p class="item-text__description">Latin professor at Hampden-Sydney College in Virginia.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="nft-divider">
+            <img class="nft-divider__image" src="images\divider-01.svg" alt="divider image">
+        </div>
+
+        <section class="nft-progress progress wrapper">
+
+            <div class="progress-item">
+                <h3 class="progress-item__title">4,000+</h3>
+                <p class="progress-item__description">Wallets Connected</p>
+            </div>
+
+            <div class="progress-item">
+                <h3 class="progress-item__title">20,000+</h3>
+                <p class="progress-item__description">Collections Indexed every 5 mins.</p>
+            </div>
+
+            <div class="progress-item">
+                <h3 class="progress-item__title">2.5x</h3>
+                <p class="progress-item__description">Difference in Floor & Estimated Value</p>
+            </div>
+            
+        </section>
+
+        <div class="nft-divider">
+            <img class="nft-divider__image" src="images\divider-01.svg" alt="divider image">
+        </div>
+
+        <section class="nft-about about wrapper">
+            <h2 class="about__title">About the plaform</h2>
+
+            <div class="about-content content">
+                <img class="content__image" src="images\about\about-01.png" alt="about image">
+
+                <div class="content-info info">
+                    <div class="info__label">create and invest</div>
+                    <h3 class="info__title">Create your own NFT</h3>
+
+                    <p class="info__description">Multiple Chains, One Home. Stack up all your NFTs from across blockchains.</p>
+
+                    <div class="info-advances advances">
+                        <div class="advances-item">
+                            <h4 class="advances-item__number">4,500+</h4>
+                            <p class="advances-item__text">Collections Indexed every 5mins.</p>
+                        </div>
+
+                        <div class="advances-item">
+                            <h4 class="advances-item__number">2.5x</h4>
+                            <p class="advances-item__text">Difference in Floor & Estimated Value</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content content">
+                <div class="content-info info">
+                    <div class="info__label">sync and track</div>
+                    <h3 class="info__title">Multiple Chains, One Home</h3>
+
+                    <p class="info__description">We make it easy to Discover, Invest and manage all your NFTs at one place, looked up one of the more obscure.Find the right NFT collections to buy within the platform.</p>
+
+                    <div class="info-advances advances">
+                        <div class="advances-item item-image">
+                            <div class="item-image__image"><img src="images\about\icons\account_tree.svg" alt="account tree icon"></div>
+                            <p class="item-image__text">Collections Indexed every 5mins.</p>
+                        </div>
+
+                        <div class="advances-item item-image">
+                            <div class="item-image__image"><img src="images\about\icons\whatshot.svg" alt="whatshot icon"></div>
+                            <p class="item-image__text">Difference in Floor & Estimated Value</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="content__image" src="images\about\about-02.png" alt="about image">
+
             </div>
         </section>
+
+        <div class="nft-divider">
+            <img class="nft-divider__image" src="images\divider-01.svg" alt="divider image">
+        </div>
+
     </main>
-    
-    <script src="js/app.js"></script>
+
+    <script type="module" src="js/app.js"></script>
 </body>
+
 </html>

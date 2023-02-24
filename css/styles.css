@@ -8,8 +8,8 @@
   font-size: 1rem;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   padding: 13px 25px;
 }
 .button:hover {
@@ -55,16 +55,17 @@
           align-items: center;
 }
 .header .nav-menu__item {
-  color: #0f051d;
-  cursor: pointer;
   font-weight: 500;
   font-size: 1.1rem;
   margin-left: 45px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.header .nav-menu__item a {
+  color: #0f051d;
 }
 .header .nav-menu__item:hover {
   opacity: 0.5;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
 }
 .header .nav-menu__item:first-child {
   margin-left: 0;
@@ -99,7 +100,7 @@
 .nft .home-title__button {
   margin-top: 25px;
 }
-.nft .home-title__eth, .nft .home-title__blue, .nft .home-title__orange {
+.nft .home-title__eth, .nft .home-title__blue, .nft .home-title__orange, .nft .home-title__x, .nft .home-title__btc {
   position: absolute;
 }
 .nft .home-title__eth {
@@ -119,6 +120,28 @@
   height: auto;
   bottom: -10%;
   right: 25%;
+}
+.nft .home-title__btc {
+  width: 10%;
+  height: auto;
+  bottom: 10%;
+  right: -15%;
+}
+.nft .home-title .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .nft .home-images {
   position: relative;
@@ -161,6 +184,256 @@
   opacity: 0.5;
   z-index: -1;
 }
+.nft .home-images__x {
+  position: absolute;
+  width: 4%;
+  height: auto;
+  top: -5%;
+  right: 20%;
+}
+
+.nft .investors {
+  margin-top: 175px;
+}
+.nft .investors__title {
+  color: #d3d0da;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.nft .investors .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nft .investors .logos-link {
+  margin-top: 50px;
+}
+.nft .investors .logos-link__image {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  width: 75%;
+  height: auto;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.nft .investors .logos-link__image:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.nft .mint {
+  margin-top: 100px;
+}
+.nft .mint__title {
+  color: #0f051d;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+.nft .mint .card {
+  margin-top: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.nft .mint .card .item {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-top: 25px;
+  padding: 40px;
+}
+.nft .mint .card .item:nth-child(odd) {
+  margin-left: 0;
+}
+.nft .mint .card .item__image {
+  width: 15%;
+  height: auto;
+}
+.nft .mint .card .item-text {
+  margin-left: 25px;
+}
+.nft .mint .card .item-text__title {
+  color: #0f051d;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.nft .mint .card .item-text__description {
+  color: #0f051d;
+  margin-top: 15px;
+}
+
+.nft .progress {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nft .progress-item {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.nft .progress-item__title {
+  color: #a67fff;
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+.nft .progress-item__description {
+  margin-top: 25px;
+  color: #d3d0da;
+}
+
+.nft .about {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.nft .about__title {
+  color: #0f051d;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+}
+.nft .about .content {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nft .about .content__image {
+  width: 35%;
+  height: auto;
+  margin-right: 45px;
+}
+.nft .about .content__image:last-child {
+  margin-right: 0;
+  margin-left: 45px;
+}
+.nft .about .content .info {
+  max-width: 450px;
+}
+.nft .about .content .info__label {
+  color: #a67fff;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.nft .about .content .info__title {
+  margin-top: 10px;
+  font-size: 2.85rem;
+  font-weight: 700;
+}
+.nft .about .content .info__description {
+  color: #0f051d;
+  margin-top: 15px;
+}
+.nft .about .content .info .advances {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nft .about .content .info .advances-item__number {
+  color: #0f051d;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.nft .about .content .info .advances-item__text {
+  color: #0f051d;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+.nft .about .content .info .advances .item-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nft .about .content .info .advances .item-image__image {
+  padding: 7px;
+  border-radius: 10px;
+  background-color: #a67fff;
+}
+.nft .about .content .info .advances .item-image__image img {
+  width: 100%;
+  height: 100%;
+}
+.nft .about .content .info .advances .item-image__text {
+  color: #0f051d;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
 
 * {
   -webkit-box-sizing: border-box;
@@ -174,7 +447,8 @@ html {
 }
 
 body {
-  background-color: #f5f0ff;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgb(245, 240, 255)), to(rgb(255, 255, 255)));
+  background: linear-gradient(180deg, rgb(245, 240, 255) 25%, rgb(255, 255, 255) 100%);
   width: 100%;
   height: auto;
   font-family: "Space Grotesk", sans-serif;
@@ -184,6 +458,16 @@ body {
 main {
   padding-left: 15px;
   padding-right: 15px;
+}
+main .nft-divider {
+  margin-top: 100px;
+  width: 100%;
+  height: 15px;
+}
+main .nft-divider__image {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
 }
 
 a {

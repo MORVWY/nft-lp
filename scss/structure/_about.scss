@@ -1,0 +1,98 @@
+.nft {
+    .about {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &__title {
+            color: $dark-color;
+            font-weight: 700;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__image {
+                width: 35%;
+                height: auto;
+                margin-right: 45px;
+
+                &:last-child {
+                    margin-right: 0;
+                    margin-left: 45px;
+                }
+            }
+
+            .info {
+                max-width: 450px;
+
+                &__label {
+                    color: $light-pink-purple;
+                    font-size: .8rem;
+                    text-transform: uppercase;
+                }
+
+                &__title {
+                    margin-top: 10px;
+                    font-size: 2.85rem;
+                    font-weight: 700;
+                }
+
+                &__description {
+                    color: $dark-color;
+                    margin-top: 15px;
+                }
+
+                .advances {
+                    margin-top: 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &-item {
+                        &__number {
+                            color: $dark-color;
+                            font-weight: 700;
+                            font-size: 2rem;
+                        }
+
+                        &__text {
+                            color: $dark-color;
+                            font-size: .9rem;
+                            margin-top: 15px;
+                        }
+                    }
+
+                    .item-image {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        &__image {
+                            padding: 7px;
+                            border-radius: 10px;
+                            background-color: $light-pink-purple;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        &__text {
+                            color: $dark-color;
+                            font-size: .9rem;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

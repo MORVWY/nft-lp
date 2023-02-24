@@ -21,15 +21,17 @@
             align-items: center;
 
             &__item {
-                color: $dark-color;
-                cursor: pointer;
                 font-weight: 500;
                 font-size: 1.1rem;
                 margin-left: 45px;
+                transition: all .8s ease;
+
+                a {
+                    color: $dark-color;
+                }
 
                 &:hover {
                     opacity: .5;
-                    transition: .8s;
                 }
 
                 &:first-child {
