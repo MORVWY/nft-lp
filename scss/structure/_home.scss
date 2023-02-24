@@ -1,0 +1,101 @@
+.nft {
+    .home {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-title {
+            position: relative;
+            max-width: 400px;
+
+            &__item {
+                font-weight: 700;
+                font-size: 4rem;
+            }
+
+            &__description {
+                color: $grey-color;
+                font-weight: 500;
+                font-size: 1.3rem;
+                margin-top: 15px;
+            }
+
+            &__button {
+                margin-top: 25px;
+            }
+
+            &__eth,
+            &__blue,
+            &__orange {
+                position: absolute;
+            }
+
+            &__eth {
+                width: 10%;
+                height: auto;
+                top: -20%;
+                right: 15%;
+            }
+
+            &__blue {
+                width: 5%;
+                height: auto;
+                top: 25%;
+                left: -10%;
+            }
+
+            &__orange {
+                width: 10%;
+                height: auto;
+                bottom: -10%;
+                right: 25%;
+            }
+        }
+
+        &-images {
+            position: relative;
+            width: 100%;
+            height: 400px;
+
+            img {
+                position: absolute;
+            }
+
+            &__drop {
+                left: 15%;
+                border-radius: 10px;
+                width: 35%;
+                height: auto;
+            }
+
+            &__man {
+                left: 55%;
+                top: 10%;
+                border-radius: 10px;
+                width: 35%;
+                height: auto;
+            }
+
+            &__blop {
+                width: 75%;
+                height: auto;
+                left: 50%;
+                top: -15%;
+                transform: translateX(-50%);
+                height: auto;
+                opacity: .5;
+                z-index: -2;
+            }
+
+            &__blop-line {
+                width: 60%;
+                height: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                opacity: .5;
+                z-index: -1;
+            }
+        }
+    }
+}

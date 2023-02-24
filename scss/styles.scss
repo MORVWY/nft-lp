@@ -2,6 +2,7 @@
 @import './main/fonts';
 @import './main/button';
 @import './structure/nav';
+@import './structure/home';
 
 
 * {
@@ -20,6 +21,11 @@ body {
     height: auto;
     font-family: 'Space Grotesk', sans-serif;
     overflow-x: hidden;
+}
+
+main {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 a {

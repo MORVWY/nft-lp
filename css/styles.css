@@ -1,17 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
 .button {
-  background: -webkit-gradient(linear, left top, right top, from(rgb(73, 104, 234)), to(rgb(70, 174, 242)));
-  background: linear-gradient(to right, rgb(73, 104, 234) 0%, rgb(70, 174, 242) 100%);
-  border: none;
-  border-radius: 6px;
-  color: #fff;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #0f051d;
   cursor: pointer;
   font-size: 1rem;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   padding: 13px 25px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+}
+.button:hover {
+  background-color: #241b44;
+  color: #fff;
+}
+.button:active {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .header {
@@ -31,6 +38,11 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.header .nav-logo {
+  color: #0f051d;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
 .header .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,9 +54,112 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.header .nav .button:hover {
-  background: -webkit-gradient(linear, right top, left top, from(rgb(73, 104, 234)), to(rgb(70, 174, 242)));
-  background: linear-gradient(to left, rgb(73, 104, 234) 0%, rgb(70, 174, 242) 100%);
+.header .nav-menu__item {
+  color: #0f051d;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-left: 45px;
+}
+.header .nav-menu__item:hover {
+  opacity: 0.5;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.header .nav-menu__item:first-child {
+  margin-left: 0;
+}
+
+.nft .home {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nft .home-title {
+  position: relative;
+  max-width: 400px;
+}
+.nft .home-title__item {
+  font-weight: 700;
+  font-size: 4rem;
+}
+.nft .home-title__description {
+  color: #d3d0da;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: 15px;
+}
+.nft .home-title__button {
+  margin-top: 25px;
+}
+.nft .home-title__eth, .nft .home-title__blue, .nft .home-title__orange {
+  position: absolute;
+}
+.nft .home-title__eth {
+  width: 10%;
+  height: auto;
+  top: -20%;
+  right: 15%;
+}
+.nft .home-title__blue {
+  width: 5%;
+  height: auto;
+  top: 25%;
+  left: -10%;
+}
+.nft .home-title__orange {
+  width: 10%;
+  height: auto;
+  bottom: -10%;
+  right: 25%;
+}
+.nft .home-images {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.nft .home-images img {
+  position: absolute;
+}
+.nft .home-images__drop {
+  left: 15%;
+  border-radius: 10px;
+  width: 35%;
+  height: auto;
+}
+.nft .home-images__man {
+  left: 55%;
+  top: 10%;
+  border-radius: 10px;
+  width: 35%;
+  height: auto;
+}
+.nft .home-images__blop {
+  width: 75%;
+  height: auto;
+  left: 50%;
+  top: -15%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: auto;
+  opacity: 0.5;
+  z-index: -2;
+}
+.nft .home-images__blop-line {
+  width: 60%;
+  height: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0.5;
+  z-index: -1;
 }
 
 * {
@@ -64,6 +179,11 @@ body {
   height: auto;
   font-family: "Space Grotesk", sans-serif;
   overflow-x: hidden;
+}
+
+main {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 a {

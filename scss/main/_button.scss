@@ -1,12 +1,21 @@
 .button {
-    background: linear-gradient(to right, rgba(73, 104, 234, 1) 0%, rgba(70, 174, 242, 1) 100%);
-    border: none;
-    border-radius: 6px;
-    color: $white-color;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: transparent;
+    color: $dark-color;
     cursor: pointer;
     font-size: 1rem;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
+    transition: all .5s;
     padding: 13px 25px;
-    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: $buttons-color;
+        color: $white-color;
+    }
+
+    &:active {
+        transform: translateY(5px);
+    }
 }

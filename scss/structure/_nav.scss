@@ -9,20 +9,32 @@
         padding-top: 15px;
         padding-bottom: 15px;
 
-        &-logo {}
+        &-logo {
+            color: $dark-color;
+            font-weight: 700;
+            font-size: 1.7rem;
+        }
 
         &-menu {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            &__item {}
-        }
+            &__item {
+                color: $dark-color;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 1.1rem;
+                margin-left: 45px;
 
-        .button {
-            
-            &:hover {
-                background: linear-gradient(to left, rgba(73, 104, 234, 1) 0%, rgba(70, 174, 242, 1) 100%);
+                &:hover {
+                    opacity: .5;
+                    transition: .8s;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
             }
         }
     }
