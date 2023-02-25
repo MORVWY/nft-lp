@@ -2,6 +2,31 @@
 
     .mint {
         margin-top: 100px;
+        position: relative;
+
+        &__blue {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            left: 30%;
+            top: 20%;
+        }
+
+        &__pink {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            right: 10%;
+            bottom: 10%;
+        }
+
+        &__x {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 5%;
+            bottom: 25%;
+        }
 
         &__title {
             color: $dark-color;
@@ -23,6 +48,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 box-shadow: $cards-shadow;
+                background-color: $white-color;
                 border-radius: 25px;
                 margin-left: 25px;
                 margin-top: 25px;

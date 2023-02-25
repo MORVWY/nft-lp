@@ -117,6 +117,11 @@
 .header {
   padding-left: 15px;
   padding-right: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 .header .nav {
   display: -webkit-box;
@@ -164,8 +169,16 @@
   margin-left: 0;
 }
 
+.scroll-header-bg {
+  background-color: #fff;
+}
+
+.hide-on-modal {
+  z-index: 1;
+}
+
 .nft .home {
-  padding-top: 100px;
+  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,6 +337,28 @@
 
 .nft .mint {
   margin-top: 100px;
+  position: relative;
+}
+.nft .mint__blue {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 30%;
+  top: 20%;
+}
+.nft .mint__pink {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: 10%;
+  bottom: 10%;
+}
+.nft .mint__x {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 5%;
+  bottom: 25%;
 }
 .nft .mint__title {
   color: #0f051d;
@@ -359,6 +394,7 @@
           align-items: center;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
   border-radius: 25px;
   margin-left: 25px;
   margin-top: 25px;
@@ -395,6 +431,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+.nft .progress__eth {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 30%;
+  top: 0;
+}
+.nft .progress__btc {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 30%;
+  bottom: -25%;
 }
 .nft .progress-item {
   -ms-flex-preferred-size: 35%;
@@ -567,6 +618,7 @@
   border-radius: 25px;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,6 +703,7 @@
   border-radius: 25px;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
   padding: 25px;
   min-width: 300px;
 }
@@ -772,6 +825,7 @@
   padding: 10px;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
   border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,6 +908,7 @@
   padding: 35px;
   -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
   width: 50%;
 }
 .nft .faq .list-item {
@@ -892,6 +947,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+.nft .join__eth, .nft .join__circle, .nft .join__btc, .nft .join__x {
+  position: absolute;
+}
+.nft .join__eth {
+  width: 40px;
+  height: 40px;
+  right: 30%;
+  top: -5%;
+}
+.nft .join__btc {
+  width: 35px;
+  height: 35px;
+  left: 30%;
+  bottom: 5%;
+}
+.nft .join__circle {
+  width: 20px;
+  height: 20px;
+  left: 25%;
+  top: 5%;
+}
+.nft .join__x {
+  width: 15px;
+  height: 15px;
+  right: 35%;
+  bottom: 5%;
 }
 .nft .join__background {
   position: absolute;
@@ -925,6 +1008,34 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+}
+.nft .discover__eth, .nft .discover__circle, .nft .discover__circle2, .nft .discover__x {
+  position: absolute;
+}
+.nft .discover__eth {
+  width: 25px;
+  height: 25px;
+  bottom: 25%;
+  left: 25%;
+}
+.nft .discover__circle {
+  width: 15px;
+  height: 15px;
+  bottom: -25%;
+  left: 60%;
+}
+.nft .discover__circle2 {
+  width: 20px;
+  height: 20px;
+  bottom: -75%;
+  left: 30%;
+}
+.nft .discover__x {
+  width: 15px;
+  height: 15px;
+  right: 25%;
+  top: 15%;
 }
 .nft .discover__title {
   color: #0f051d;

@@ -4,6 +4,23 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+
+        &__eth {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: 30%;
+            top: 0;
+        }
+
+        &__btc {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            left: 30%;
+            bottom: -25%;
+        }
 
         &-item {
             flex-basis: 35%;

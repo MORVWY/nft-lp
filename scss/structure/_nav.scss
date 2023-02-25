@@ -1,6 +1,11 @@
 .header {
     padding-left: 15px;
     padding-right: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 
     .nav {
         display: flex;
@@ -40,4 +45,12 @@
             }
         }
     }
+}
+
+.scroll-header-bg {
+    background-color: $white-color;
+}
+
+.hide-on-modal {
+    z-index: 1;
 }

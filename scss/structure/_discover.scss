@@ -6,6 +6,39 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: relative;
+
+        &__eth, &__circle, &__circle2, &__x {
+            position: absolute;
+        }
+
+        &__eth {
+            width: 25px;
+            height: 25px;
+            bottom: 25%;
+            left: 25%;
+        }
+
+        &__circle {
+            width: 15px;
+            height: 15px;
+            bottom: -25%;
+            left: 60%; 
+        }
+
+        &__circle2 {
+            width: 20px;
+            height: 20px;
+            bottom: -75%;
+            left: 30%; 
+        }
+
+        &__x {
+            width: 15px;
+            height: 15px;
+            right: 25%;
+            top: 15%;
+        }
 
         &__title {
             color: $dark-color;
