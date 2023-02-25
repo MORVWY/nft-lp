@@ -1,0 +1,43 @@
+.divider {
+    border: none;
+    border-bottom: 1px solid $grey-color;
+    border-radius: 1px;
+}
+
+.footer {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__rights {
+        color: $grey-color;
+        font-size: .8rem;
+    }
+
+    &-links {
+        display: flex;
+        align-items: center;
+
+        &__policy {
+            color: $grey-color;
+            font-size: .8rem;
+            transition: all .5s ease;
+
+            &:hover {
+                color: $dark-color;
+            }
+        }
+
+        &__terms {
+            color: $grey-color;
+            margin-left: 15px;
+            font-size: .8rem;
+            transition: all .5s ease;
+
+            &:hover {
+                color: $dark-color;
+            }
+        }
+    }
+}

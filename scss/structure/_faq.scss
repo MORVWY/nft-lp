@@ -1,0 +1,47 @@
+.nft {
+    .faq {
+        margin-top: 100px;
+
+        &__title {
+            color: $dark-color;
+            font-weight: 700;
+            font-size: 3rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .list {
+            margin: 0 auto;
+            margin-top: 50px;
+            border-radius: 25px;
+            padding: 35px;
+            box-shadow: $cards-shadow;
+            width: 50%;
+
+            &-item {
+                border-bottom: 1px solid $grey-color;
+                margin-top: 15px;
+                padding-bottom: 15px;
+
+                &:last-child {
+                    border: none;
+                }
+
+                &:first-child {
+                    margin-top: 0;
+                }
+
+                &__header {
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                }
+
+                &__content {
+                    margin-top: 15px;
+                    font-size: .9rem;
+                    color: $grey-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.nft {
+    .roadmap {
+        margin-top: 100px;
+
+        &__title {
+            color: $dark-color;
+            font-weight: 700;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .cards {
+            margin-top: 50px;
+            padding: 25px;
+
+            overflow-x: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            &::-webkit-scrollbar{
+                height: 7px;
+                width: 4px;
+                background: transparent;
+            }
+            &::-webkit-scrollbar-thumb:horizontal{
+                background: $light-pink-purple;
+                border-radius: 10px;
+            }
+
+            .item {
+                margin-left: 25px;
+                border-radius: 25px;
+                box-shadow: $cards-shadow;
+                padding: 25px;
+                min-width: 300px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &-top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &__label {
+                        color: $light-pink-purple;
+                        font-size: .8rem;
+                        text-transform: uppercase;
+                    }
+
+                    &__circle {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background-color: $light-pink-purple;
+                        padding: 10px;
+
+                        span {
+                            color: $white-color;
+                            font-weight: 700;
+                            font-size: 1.3rem;
+                            transform: rotate(15deg);
+                        }
+                    }
+                }
+
+                &__title {
+                    margin-top: 25px;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+
+                &__description {
+                    margin-top: 25px;
+                }
+
+                &__divider {
+                    margin-top: 25px;
+                    width: 25%;
+                    border: none;
+                    border-top: 1px solid $grey-color;
+                    border-radius: 1px;
+                }
+
+                .advantages {
+                    margin-top: 25px;
+
+                    &-item {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        &__icon {
+                            border-radius: 50%;
+                            border: 1px solid $light-pink-purple;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+
+                        &__text {
+                            margin-left: 5px;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

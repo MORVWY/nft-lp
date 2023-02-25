@@ -1,0 +1,44 @@
+.nft {
+    .discover {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__title {
+            color: $dark-color;
+            font-weight: 700;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+
+        &__description {
+            margin-top: 25px;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        &-links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            &__item {
+                img {
+                    width: 25px;
+                    height: 25px;
+                    filter: grayscale(100%);
+                    transition: all .5s ease;
+    
+                    &:hover {
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+}

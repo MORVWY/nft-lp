@@ -1,12 +1,20 @@
 @import './main/variables';
 @import './main/fonts';
 @import './main/button';
+@import './main/modal';
 @import './structure/nav';
 @import './structure/home';
 @import './structure/investors';
 @import './structure/mint';
 @import './structure/progress';
 @import './structure/about';
+@import './structure/works';
+@import './structure/roadmap';
+@import './structure/artists';
+@import './structure/faq';
+@import './structure/join';
+@import './structure/discover';
+@import './structure/footer';
 
 * {
     box-sizing: border-box;

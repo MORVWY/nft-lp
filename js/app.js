@@ -1,7 +1,7 @@
-// import {
-//     textAnimation
-// } from './circleText.js';
+import {
+    modal
+} from './modal.js';
 
 window.addEventListener('DOMContentLoaded', () => {
-    
+    modal();
 });
