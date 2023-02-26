@@ -7,19 +7,25 @@ function onHamb() {
         hamb.classList.toggle('active');
         nav.classList.toggle('activeNav');
 
-        if (document.body.classList.contains('overflowHidden')) {
-            document.body.classList.remove('overflowHidden');
-        } else {
-            document.body.classList.add('overflowHidden');
-        }
+        checkOverflow();
     });
 
     document.querySelectorAll('.nav-menu__item').forEach(item => {
         item.addEventListener('click', () => {
             hamb.classList.remove('active');
             nav.classList.remove('activeNav');
+
+            checkOverflow();
         });
     });
+
+    function checkOverflow() {
+        if (document.body.classList.contains('overflowHidden')) {
+            document.body.classList.remove('overflowHidden');
+        } else {
+            document.body.classList.add('overflowHidden');
+        }
+    }
 }
 
 export {onHamb};
