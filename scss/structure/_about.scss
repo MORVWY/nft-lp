@@ -5,13 +5,6 @@
         align-items: center;
         flex-direction: column;
 
-        &__title {
-            color: $dark-color;
-            font-weight: 700;
-            font-size: 3rem;
-            text-align: center;
-        }
-
         .content {
             margin-top: 50px;
             display: flex;

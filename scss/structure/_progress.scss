@@ -12,6 +12,7 @@
             height: 25px;
             right: 30%;
             top: 0;
+            z-index: -1;
         }
 
         &__btc {
@@ -20,6 +21,7 @@
             height: 35px;
             left: 30%;
             bottom: -25%;
+            z-index: -1;
         }
 
         &-item {
