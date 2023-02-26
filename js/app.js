@@ -7,6 +7,10 @@ import {
 } from './navigation.js';
 
 import {
+    onHamb
+} from './hamburger.js';
+
+import {
     createArtworks
 } from './data/artworks.js';
 
@@ -30,4 +34,5 @@ window.addEventListener('DOMContentLoaded', () => {
     createTeamMember();
     createFAQ();
     onScrollNav();
+    onHamb();
 });

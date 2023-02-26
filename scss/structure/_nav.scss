@@ -44,6 +44,21 @@
                 }
             }
         }
+
+        .hamb {
+            display: none;
+            cursor: pointer;
+    
+            &__bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all .3s ease-in-out;
+                transition: all .3s ease-in-out;
+                background-color: $dark-color;
+            }
+        }
     }
 }
 

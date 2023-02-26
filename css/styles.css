@@ -116,9 +116,55 @@
   body .header .nav {
     padding: 10px 0;
   }
-  body .header .nav-menu,
-body .header .nav .button {
+  body .header .nav-menu {
+    position: fixed;
+    display: block;
+    left: -100%;
+    top: 0;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  body .header .nav-menu__item {
+    margin: 25px 0;
+    width: 100%;
+  }
+  body .header .nav-menu__item a {
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+  }
+  body .header .nav-menu__item:first-child {
+    margin-top: 150px;
+  }
+  body .header .nav .activeNav {
+    left: 0;
+  }
+  body .header .nav .button {
     display: none;
+  }
+  body .header .nav .hamb {
+    display: block;
+  }
+  body .header .nav .active .hamb__bar:nth-child(2) {
+    opacity: 0;
+  }
+  body .header .nav .active .hamb__bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  body .header .nav .active .hamb__bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
   }
   body .nft .home {
     padding-top: 150px;
@@ -345,6 +391,15 @@ body .header .nav .button {
   body .title {
     font-size: 1.5rem;
   }
+  body .modal .item {
+    width: 300px;
+  }
+  body .modal .item__title {
+    font-size: 1.5rem;
+  }
+  body .modal .item .form__text, body .modal .item .form__email {
+    font-size: 1.2rem;
+  }
 }
 .button {
   border: 2px solid;
@@ -402,7 +457,8 @@ body .header .nav .button {
   position: relative;
   background-color: #fff;
   padding: 25px;
-  width: 25%;
+  width: 400px;
+  height: auto;
   border-radius: 25px;
 }
 .modal .item__close {
@@ -521,6 +577,19 @@ body .header .nav .button {
 }
 .header .nav-menu__item:first-child {
   margin-left: 0;
+}
+.header .nav .hamb {
+  display: none;
+  cursor: pointer;
+}
+.header .nav .hamb__bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #0f051d;
 }
 
 .scroll-header-bg {
@@ -1284,17 +1353,18 @@ body .header .nav .button {
   right: 35%;
   bottom: 5%;
 }
-.nft .join__background {
-  position: absolute;
-  width: 125%;
-  opacity: 0.1;
-  z-index: -1;
-}
 .nft .join__title {
   max-width: 300px;
 }
 .nft .join__button {
   margin-top: 50px;
+}
+.nft .join__background {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 .nft .discover {
