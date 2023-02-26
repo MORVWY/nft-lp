@@ -145,15 +145,20 @@
   body .nft .about .content__image {
     display: none;
   }
+  body .nft .about .content .info {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 25px;
+  }
   body .nft .about .content .info__title {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: center;
   }
   body .nft .about .content .info__description {
     text-align: center;
   }
   body .nft .about .content .info .advances-item__number {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
   }
   body .nft .about .content .info .advances-item__text {
@@ -264,16 +269,16 @@
     font-size: 0.9rem;
   }
   body .nft .about .content .info__title {
-    font-size: 1.5rem;
-  }
-  body .nft .about .content .info__description {
-    font-size: 0.9rem;
-  }
-  body .nft .about .content .info .advances-item__number {
     font-size: 1.3rem;
   }
-  body .nft .about .content .info .advances-item__text {
+  body .nft .about .content .info__description {
     font-size: 0.8rem;
+  }
+  body .nft .about .content .info .advances-item__number {
+    font-size: 1.1rem;
+  }
+  body .nft .about .content .info .advances-item__text {
+    font-size: 0.7rem;
   }
   body .nft .about .content .info .advances .item-image__image {
     padding: 5px;
@@ -283,7 +288,7 @@
     height: auto;
   }
   body .nft .about .content .info .advances .item-image__text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   body .nft .works .cards {
     margin-top: 25px;

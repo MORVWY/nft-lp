@@ -245,9 +245,12 @@
                     }
         
                     .info {
+                        background-color: $white-color;
+                        padding: 25px;
+                        border-radius: 25px;
         
                         &__title {
-                            font-size: 2rem;
+                            font-size: 1.7rem;
                             text-align: center;
                         }
 
@@ -259,7 +262,7 @@
         
                             &-item {
                                 &__number {
-                                    font-size: 1.5rem;
+                                    font-size: 1.4rem;
                                     text-align: center;
                                 }
 
@@ -441,22 +444,22 @@
                     .info {
         
                         &__title {
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                         }
 
                         &__description {
-                            font-size: .9rem;
+                            font-size: .8rem;
                         }
         
                         .advances {
         
                             &-item {
                                 &__number {
-                                    font-size: 1.3rem;
+                                    font-size: 1.1rem;
                                 }
 
                                 &__text {
-                                    font-size: .8rem;
+                                    font-size: .7rem;
                                 }
                             }
 
@@ -471,7 +474,7 @@
                                 }
                                 
                                 &__text {
-                                    font-size: .8rem;
+                                    font-size: .7rem;
                                 }
                             }
                         }
