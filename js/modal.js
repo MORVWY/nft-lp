@@ -1,8 +1,7 @@
 function modal() {
     const button = document.querySelectorAll('.open-modal'),
         modalWindow = document.querySelector('.modal'),
-        nav = document.querySelector('.header'),
-        form = document.querySelector('.form');
+        nav = document.querySelector('.header');
 
     function openModal() {
         modalWindow.classList.remove('hidden');

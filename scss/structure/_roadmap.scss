@@ -55,14 +55,15 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        border-radius: 50%;
+                        border-radius: 100%;
                         background-color: $light-pink-purple;
-                        padding: 10px;
+                        height: 45px;
+                        width: 45px;
 
                         span {
                             color: $white-color;
                             font-weight: 700;
-                            font-size: 1.3rem;
+                            font-size: 1rem;
                             transform: rotate(15deg);
                         }
                     }
