@@ -8,8 +8,12 @@
   }
 }
 @media (max-width: 992px) {
-  body .nft .home {
-    padding-top: 100px;
+  body .header .nav-logo {
+    font-size: 1.5rem;
+  }
+  body .header .nav-menu__item {
+    font-size: 1rem;
+    margin-left: 25px;
   }
   body .nft .home-title {
     max-width: 100%;
@@ -104,8 +108,21 @@
   body .title {
     font-size: 2.5rem;
   }
+  body .button {
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 768px) {
+  body .header .nav {
+    padding: 10px 0;
+  }
+  body .header .nav-menu,
+body .header .nav .button {
+    display: none;
+  }
+  body .nft .home {
+    padding-top: 150px;
+  }
   body .nft .home-title__item {
     font-size: 3rem;
   }
@@ -1269,6 +1286,7 @@
 }
 .nft .join__background {
   position: absolute;
+  width: 125%;
   opacity: 0.1;
   z-index: -1;
 }

@@ -19,9 +19,26 @@
 
 @media (max-width: 992px) {
     body {
+        .header {
+
+            .nav {
+
+                &-logo {
+                    font-size: 1.5rem;
+                }
+
+                &-menu {
+
+                    &__item {
+                        font-size: 1rem;
+                        margin-left: 25px;
+                    }
+                }
+            }
+        }
+
         .nft {
             .home {
-                padding-top: 100px;
 
                 &-title {
                     max-width: 100%;
@@ -108,10 +125,10 @@
             .progress {
                 flex-direction: column;
                 margin-top: 50px;
-        
+
                 &-item {
                     margin-top: 50px;
-        
+
                     &__title {
                         font-size: 3rem;
                     }
@@ -123,17 +140,17 @@
             }
 
             .about {
-        
+
                 .content {
-        
+
                     .info {
-        
+
                         &__title {
                             font-size: 2.3rem;
                         }
-        
+
                         .advances {
-        
+
                             &-item {
                                 &__number {
                                     font-size: 1.7rem;
@@ -145,11 +162,11 @@
             }
 
             .roadmap {
-        
+
                 .cards {
-        
+
                     .item {
-        
+
                         &__title {
                             font-size: 1.3rem;
                         }
@@ -158,7 +175,7 @@
             }
 
             .faq {
-        
+
                 .list {
                     width: 75%;
                 }
@@ -168,13 +185,30 @@
         .title {
             font-size: 2.5rem;
         }
+
+        .button {
+            font-size: .9rem;
+        }
     }
 }
 
 @media (max-width: 768px) {
     body {
+        .header {
+
+            .nav {
+                padding: 10px 0;
+
+                &-menu,
+                .button {
+                    display: none;
+                }
+            }
+        }
+
         .nft {
             .home {
+                padding-top: 150px;
 
                 &-title {
 
@@ -216,7 +250,7 @@
                     flex-direction: column;
 
                     .item {
-                        
+
                         &-text {
 
                             &__title {
@@ -228,9 +262,9 @@
             }
 
             .progress {
-        
+
                 &-item {
-        
+
                     &__title {
                         font-size: 2.5rem;
                     }
@@ -238,17 +272,17 @@
             }
 
             .about {
-        
+
                 .content {
                     &__image {
                         display: none;
                     }
-        
+
                     .info {
                         background-color: $white-color;
                         padding: 25px;
                         border-radius: 25px;
-        
+
                         &__title {
                             font-size: 1.7rem;
                             text-align: center;
@@ -257,9 +291,9 @@
                         &__description {
                             text-align: center;
                         }
-        
+
                         .advances {
-        
+
                             &-item {
                                 &__number {
                                     font-size: 1.4rem;
@@ -276,24 +310,24 @@
             }
 
             .roadmap {
-        
+
                 .cards {
-        
+
                     .item {
                         height: 350px;
-        
+
                         &-top {
-        
+
                             &__circle {
                                 height: 35px;
                                 width: 35px;
-        
+
                                 span {
                                     font-size: 1rem;
                                 }
                             }
                         }
-        
+
                         &__title {
                             font-size: 1.2rem;
                         }
@@ -306,14 +340,14 @@
             }
 
             .artists {
-        
+
                 .cards {
                     flex-wrap: wrap;
                 }
             }
 
             .faq {
-        
+
                 .list {
                     width: 85%;
 
@@ -326,26 +360,26 @@
             }
 
             .join {
-        
+
                 &__eth {
                     top: -45%;
                 }
-        
+
                 &__btc {
                     bottom: -35%;
                 }
-        
+
                 &__circle {
-                    top: -25%; 
+                    top: -25%;
                 }
-        
+
                 &__x {
-                    bottom: -15%; 
+                    bottom: -15%;
                 }
             }
 
             .discover {
-        
+
                 &__eth {
                     top: -15%;
                 }
@@ -407,7 +441,7 @@
 
                     .item {
                         flex-direction: column;
-                        
+
                         &-text {
                             margin-top: 25px;
 
@@ -424,13 +458,13 @@
             }
 
             .progress {
-        
+
                 &-item {
-        
+
                     &__title {
                         font-size: 2rem;
                     }
-        
+
                     &__description {
                         font-size: .9rem;
                     }
@@ -438,11 +472,11 @@
             }
 
             .about {
-        
+
                 .content {
-        
+
                     .info {
-        
+
                         &__title {
                             font-size: 1.3rem;
                         }
@@ -450,9 +484,9 @@
                         &__description {
                             font-size: .8rem;
                         }
-        
+
                         .advances {
-        
+
                             &-item {
                                 &__number {
                                     font-size: 1.1rem;
@@ -472,7 +506,7 @@
                                         height: auto;
                                     }
                                 }
-                                
+
                                 &__text {
                                     font-size: .7rem;
                                 }
@@ -497,21 +531,21 @@
             }
 
             .roadmap {
-        
+
                 .cards {
-        
+
                     .item {
-        
+
                         &-top {
-        
+
                             &__circle {
-        
+
                                 span {
                                     font-size: .9rem;
                                 }
                             }
                         }
-        
+
                         &__title {
                             font-size: 1.1rem;
                         }
@@ -520,7 +554,7 @@
             }
 
             .faq {
-        
+
                 .list {
 
                     &-item {
@@ -532,7 +566,7 @@
             }
 
             .discover {
-        
+
                 &__description {
                     font-size: .9rem;
                 }
@@ -540,14 +574,14 @@
         }
 
         .footer {
-        
+
             &-links {
                 flex-direction: column;
-        
+
                 &__policy {
                     font-size: .7rem;
                 }
-        
+
                 &__terms {
                     margin-left: 0;
                     margin-top: 15px;
