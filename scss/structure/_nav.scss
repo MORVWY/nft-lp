@@ -1,71 +1,71 @@
 .header {
-    padding-left: 15px;
-    padding-right: 15px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-        &-logo {
-            color: $dark-color;
-            font-weight: 700;
-            font-size: 1.7rem;
-        }
-
-        &-menu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            &__item {
-                font-weight: 500;
-                font-size: 1.1rem;
-                margin-left: 45px;
-                transition: all .8s ease;
-
-                a {
-                    color: $dark-color;
-                }
-
-                &:hover {
-                    opacity: .5;
-                }
-
-                &:first-child {
-                    margin-left: 0;
-                }
-            }
-        }
-
-        .hamb {
-            display: none;
-            cursor: pointer;
-    
-            &__bar {
-                display: block;
-                width: 25px;
-                height: 3px;
-                margin: 5px auto;
-                -webkit-transition: all .3s ease-in-out;
-                transition: all .3s ease-in-out;
-                background-color: $dark-color;
-            }
-        }
+    &-logo {
+      color: $dark-color;
+      font-weight: 700;
+      font-size: 1.7rem;
     }
+
+    &-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__item {
+        font-weight: 500;
+        font-size: 1.1rem;
+        margin-left: 45px;
+        transition: all .8s ease;
+
+        a {
+          color: $dark-color;
+        }
+
+        &:hover {
+          opacity: .5;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .hamb {
+      display: none;
+      cursor: pointer;
+
+      &__bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        background-color: $dark-color;
+      }
+    }
+  }
 }
 
 .scroll-header-bg {
-    background-color: $white-color;
+  background-color: $white-color;
 }
 
 .hide-on-modal {
-    z-index: 1;
+  z-index: 1;
 }

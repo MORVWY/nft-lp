@@ -1,669 +1,621 @@
 @media (max-width: 1200px) {
-    body {
-        .nft {
-            .home {
-                &-title {
+  body {
+    .nft {
+      .home {
+        &-title {
+          &__item {
+            font-size: 3.5rem;
+          }
 
-                    &__item {
-                        font-size: 3.5rem;
-                    }
-
-                    &__description {
-                        font-size: 1.2rem;
-                    }
-                }
-            }
+          &__description {
+            font-size: 1.2rem;
+          }
         }
+      }
     }
+  }
 }
 
 @media (max-width: 992px) {
-    body {
-        .header {
-
-            .nav {
-
-                &-logo {
-                    font-size: 1.5rem;
-                }
-
-                &-menu {
-
-                    &__item {
-                        font-size: 1rem;
-                        margin-left: 25px;
-                    }
-                }
-            }
+  body {
+    .header {
+      .nav {
+        &-logo {
+          font-size: 1.5rem;
         }
 
-        .nft {
-            .home {
-
-                &-title {
-                    max-width: 100%;
-
-                    &__item {
-                        font-size: 3.5rem;
-                    }
-
-                    &__description {
-                        font-size: 1.2rem;
-                    }
-
-                    &__eth {
-                        width: 5%;
-                        height: auto;
-                        top: -10%;
-                        right: 10%;
-                        z-index: -1;
-                    }
-
-                    &__blue {
-                        width: 3%;
-                        height: auto;
-                        top: -15%;
-                        left: 10%;
-                        z-index: -1;
-                    }
-
-                    &__orange {
-                        width: 3%;
-                        height: auto;
-                        bottom: 3%;
-                        left: 35%;
-                        z-index: -1;
-                    }
-
-                    &__btc {
-                        width: 7%;
-                        height: auto;
-                        bottom: 10%;
-                        right: 15%;
-                        z-index: -1;
-                    }
-                }
-
-                &-images {
-                    display: none;
-                }
-            }
-
-            .investors {
-                margin-top: 100px;
-
-                &__title {
-                    font-size: 1.2rem;
-                }
-            }
-
-            .mint {
-
-                &__blue,
-                &__pink,
-                &__pink {
-                    z-index: -1;
-                }
-
-                .card {
-                    margin-top: 50px;
-                    flex-direction: column;
-
-                    .item {
-                        width: 75%;
-
-                        &-text {
-
-                            &__title {
-                                font-size: 1.3rem;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .progress {
-                flex-direction: column;
-                margin-top: 50px;
-
-                &-item {
-                    margin-top: 50px;
-
-                    &__title {
-                        font-size: 3rem;
-                    }
-
-                    &__description {
-                        margin-top: 10px;
-                    }
-                }
-            }
-
-            .about {
-
-                .content {
-
-                    .info {
-
-                        &__title {
-                            font-size: 2.3rem;
-                        }
-
-                        .advances {
-
-                            &-item {
-                                &__number {
-                                    font-size: 1.7rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .roadmap {
-
-                .cards {
-
-                    .item {
-
-                        &__title {
-                            font-size: 1.3rem;
-                        }
-                    }
-                }
-            }
-
-            .faq {
-
-                .list {
-                    width: 75%;
-                }
-            }
+        &-menu {
+          &__item {
+            font-size: 1rem;
+            margin-left: 25px;
+          }
         }
-
-        .title {
-            font-size: 2.5rem;
-        }
-
-        .button {
-            font-size: .9rem;
-        }
+      }
     }
+
+    .nft {
+      .home {
+        &-title {
+          max-width: 100%;
+
+          &__item {
+            font-size: 3.5rem;
+          }
+
+          &__description {
+            font-size: 1.2rem;
+          }
+
+          &__eth {
+            width: 5%;
+            height: auto;
+            top: -10%;
+            right: 10%;
+            z-index: -1;
+          }
+
+          &__blue {
+            width: 3%;
+            height: auto;
+            top: -15%;
+            left: 10%;
+            z-index: -1;
+          }
+
+          &__orange {
+            width: 3%;
+            height: auto;
+            bottom: 3%;
+            left: 35%;
+            z-index: -1;
+          }
+
+          &__btc {
+            width: 7%;
+            height: auto;
+            bottom: 10%;
+            right: 15%;
+            z-index: -1;
+          }
+        }
+
+        &-images {
+          display: none;
+        }
+      }
+
+      .investors {
+        margin-top: 100px;
+
+        &__title {
+          font-size: 1.2rem;
+        }
+      }
+
+      .mint {
+        &__blue,
+        &__pink,
+        &__pink {
+          z-index: -1;
+        }
+
+        .card {
+          margin-top: 50px;
+          flex-direction: column;
+
+          .item {
+            width: 75%;
+
+            &-text {
+              &__title {
+                font-size: 1.3rem;
+              }
+            }
+          }
+        }
+      }
+
+      .progress {
+        flex-direction: column;
+        margin-top: 50px;
+
+        &-item {
+          margin-top: 50px;
+
+          &__title {
+            font-size: 3rem;
+          }
+
+          &__description {
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .about {
+        .content {
+          .info {
+            &__title {
+              font-size: 2.3rem;
+            }
+
+            .advances {
+              &-item {
+                &__number {
+                  font-size: 1.7rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .roadmap {
+        .cards {
+          .item {
+            &__title {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+
+      .faq {
+        .list {
+          width: 75%;
+        }
+      }
+    }
+
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .button {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    body {
-        .header {
-            .nav {
-                padding: 10px 0;
+  body {
+    .header {
+      .nav {
+        padding: 10px 0;
 
-                &-menu {
-                    position: fixed;
-                    display: block;
-                    left: -100%;
-                    top: 0;
-                    gap: 0;
+        &-menu {
+          position: fixed;
+          display: block;
+          left: -100%;
+          top: 0;
+          gap: 0;
 
-                    flex-direction: column;
-                    margin: 0 auto;
+          flex-direction: column;
+          margin: 0 auto;
 
-                    background-color: $white-color;
-                    width: 100%;
-                    height: 100%;
-                    text-align: center;
-                    transition: .3s;
+          background-color: $white-color;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: 0.3s all ease-in-out;
+          z-index: 1;
 
-                    &__item {
-                        margin: 25px 0;
-                        width: 100%;
+          &__item {
+            margin: 25px 0;
+            width: 100%;
 
-                        a {
-                            font-size: 2rem;
-                            display: block;
-                            width: 100%;
-                        }
-
-                        &:first-child {
-                            margin-top: 150px;
-                        }
-                    }
-                }
-
-                .activeNav {
-                    left: 0;
-                }
-
-                .button {
-                    display: none;
-                }
-
-                .hamb {
-                    display: block;
-                }
-
-                .active {
-                    .hamb__bar {
-                        &:nth-child(2) {
-                            opacity: 0;
-                        }
-
-                        &:nth-child(1) {
-                            transform: translateY(8px) rotate(45deg);
-                        }
-
-                        &:nth-child(3) {
-                            transform: translateY(-8px) rotate(-45deg);
-                        }
-                    }
-                }
+            a {
+              font-size: 2rem;
+              display: block;
+              width: 100%;
             }
+
+            &:first-child {
+              margin-top: 150px;
+            }
+          }
         }
 
-        .nft {
-            .home {
-                padding-top: 150px;
-
-                &-title {
-
-                    &__item {
-                        font-size: 3rem;
-                    }
-
-                    &__description {
-                        font-size: 1.1rem;
-                    }
-                }
-            }
-
-            .investors {
-
-                &__title {
-                    font-size: 1.1rem;
-                }
-
-                .logos {
-                    flex-direction: column;
-
-                    &-link {
-                        margin-top: 50px;
-
-                        &__image {
-                            width: 50%;
-                            height: auto;
-                            display: block;
-                            margin: 0 auto;
-                        }
-                    }
-                }
-            }
-
-            .mint {
-
-                .card {
-                    flex-direction: column;
-
-                    .item {
-
-                        &-text {
-
-                            &__title {
-                                font-size: 1.2rem;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .progress {
-
-                &-item {
-
-                    &__title {
-                        font-size: 2.5rem;
-                    }
-                }
-            }
-
-            .about {
-
-                .content {
-                    &__image {
-                        display: none;
-                    }
-
-                    .info {
-                        background-color: $white-color;
-                        padding: 25px;
-                        border-radius: 25px;
-
-                        &__title {
-                            font-size: 1.7rem;
-                            text-align: center;
-                        }
-
-                        &__description {
-                            text-align: center;
-                        }
-
-                        .advances {
-
-                            &-item {
-                                &__number {
-                                    font-size: 1.4rem;
-                                    text-align: center;
-                                }
-
-                                &__text {
-                                    text-align: center;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .roadmap {
-
-                .cards {
-
-                    .item {
-                        height: 350px;
-
-                        &-top {
-
-                            &__circle {
-                                height: 35px;
-                                width: 35px;
-
-                                span {
-                                    font-size: 1rem;
-                                }
-                            }
-                        }
-
-                        &__title {
-                            font-size: 1.2rem;
-                        }
-
-                        &__description {
-                            font-size: .9rem;
-                        }
-                    }
-                }
-            }
-
-            .artists {
-
-                .cards {
-                    flex-wrap: wrap;
-                }
-            }
-
-            .faq {
-
-                .list {
-                    width: 85%;
-
-                    &-item {
-                        &__header {
-                            font-size: 1.2rem;
-                        }
-                    }
-                }
-            }
-
-            .join {
-
-                &__eth {
-                    top: -45%;
-                }
-
-                &__btc {
-                    bottom: -35%;
-                }
-
-                &__circle {
-                    top: -25%;
-                }
-
-                &__x {
-                    bottom: -15%;
-                }
-            }
-
-            .discover {
-
-                &__eth {
-                    top: -15%;
-                }
-            }
+        .button {
+          display: none;
         }
 
-        .title {
-            font-size: 2rem;
+        .hamb {
+          display: block;
+          z-index: 2;
         }
+
+        .active {
+          .hamb__bar {
+            &:nth-child(2) {
+              opacity: 0;
+            }
+
+            &:nth-child(1) {
+              transform: translateY(8px) rotate(45deg);
+            }
+
+            &:nth-child(3) {
+              transform: translateY(-8px) rotate(-45deg);
+            }
+          }
+        }
+      }
+
+      .activeNav {
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
     }
+
+    .nft {
+      .home {
+        padding-top: 150px;
+
+        &-title {
+          &__item {
+            font-size: 3rem;
+          }
+
+          &__description {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .investors {
+        &__title {
+          font-size: 1.1rem;
+        }
+
+        .logos {
+          flex-direction: column;
+
+          &-link {
+            margin-top: 50px;
+
+            &__image {
+              width: 50%;
+              height: auto;
+              display: block;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+      .mint {
+        .card {
+          flex-direction: column;
+
+          .item {
+            &-text {
+              &__title {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+
+      .progress {
+        &-item {
+          &__title {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .about {
+        .content {
+          &__image {
+            display: none;
+          }
+
+          .info {
+            background-color: $white-color;
+            padding: 25px;
+            border-radius: 25px;
+
+            &__title {
+              font-size: 1.7rem;
+              text-align: center;
+            }
+
+            &__description {
+              text-align: center;
+            }
+
+            .advances {
+              &-item {
+                &__number {
+                  font-size: 1.4rem;
+                  text-align: center;
+                }
+
+                &__text {
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .roadmap {
+        .cards {
+          .item {
+            height: 350px;
+
+            &-top {
+              &__circle {
+                height: 35px;
+                width: 35px;
+
+                span {
+                  font-size: 1rem;
+                }
+              }
+            }
+
+            &__title {
+              font-size: 1.2rem;
+            }
+
+            &__description {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+
+      .artists {
+        .cards {
+          flex-wrap: wrap;
+        }
+      }
+
+      .faq {
+        .list {
+          width: 85%;
+
+          &-item {
+            &__header {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+
+      .join {
+        &__eth {
+          top: -45%;
+        }
+
+        &__btc {
+          bottom: -35%;
+        }
+
+        &__circle {
+          top: -25%;
+        }
+
+        &__x {
+          bottom: -15%;
+        }
+      }
+
+      .discover {
+        &__eth {
+          top: -15%;
+        }
+      }
+    }
+
+    .title {
+      font-size: 2rem;
+    }
+  }
 }
 
 @media (max-width: 576px) {
-    body {
-        .nft {
-            .home {
+  body {
+    .nft {
+      .home {
+        &-title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
 
-                &-title {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
+          &__item {
+            font-size: 2.2rem;
+            text-align: center;
+          }
 
-                    &__item {
-                        font-size: 2.2rem;
-                        text-align: center;
-                    }
+          &__description {
+            margin-top: 25px;
+            font-size: 1rem;
+            text-align: center;
+          }
 
-                    &__description {
-                        margin-top: 25px;
-                        font-size: 1rem;
-                        text-align: center;
-                    }
-
-                    &__button {
-                        margin-top: 50px;
-                    }
-                }
-            }
-
-            .investors {
-
-                .logos {
-
-                    &-link {
-
-                        &__image {
-                            width: 35%;
-                            height: auto;
-                        }
-                    }
-                }
-            }
-
-            .mint {
-
-                .card {
-                    flex-direction: column;
-
-                    .item {
-                        flex-direction: column;
-
-                        &-text {
-                            margin-top: 25px;
-
-                            &__title {
-                                font-size: 1rem;
-                            }
-
-                            &__description {
-                                font-size: .9rem;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .progress {
-
-                &-item {
-
-                    &__title {
-                        font-size: 2rem;
-                    }
-
-                    &__description {
-                        font-size: .9rem;
-                    }
-                }
-            }
-
-            .about {
-
-                .content {
-
-                    .info {
-
-                        &__title {
-                            font-size: 1.3rem;
-                        }
-
-                        &__description {
-                            font-size: .8rem;
-                        }
-
-                        .advances {
-
-                            &-item {
-                                &__number {
-                                    font-size: 1.1rem;
-                                }
-
-                                &__text {
-                                    font-size: .7rem;
-                                }
-                            }
-
-                            .item-image {
-                                &__image {
-                                    padding: 5px;
-
-                                    img {
-                                        width: 30px;
-                                        height: auto;
-                                    }
-                                }
-
-                                &__text {
-                                    font-size: .7rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .works {
-                .cards {
-                    margin-top: 25px;
-
-                    &-item {
-                        margin-top: 25px;
-
-                        &__tag {
-                            font-size: 1rem;
-                        }
-                    }
-                }
-            }
-
-            .roadmap {
-
-                .cards {
-
-                    .item {
-
-                        &-top {
-
-                            &__circle {
-
-                                span {
-                                    font-size: .9rem;
-                                }
-                            }
-                        }
-
-                        &__title {
-                            font-size: 1.1rem;
-                        }
-                    }
-                }
-            }
-
-            .faq {
-
-                .list {
-
-                    &-item {
-                        &__header {
-                            font-size: 1.1rem;
-                        }
-                    }
-                }
-            }
-
-            .discover {
-
-                &__description {
-                    font-size: .9rem;
-                }
-            }
+          &__button {
+            margin-top: 50px;
+          }
         }
+      }
 
-        .footer {
-
-            &-links {
-                flex-direction: column;
-
-                &__policy {
-                    font-size: .7rem;
-                }
-
-                &__terms {
-                    margin-left: 0;
-                    margin-top: 15px;
-                    font-size: .7rem;
-                }
+      .investors {
+        .logos {
+          &-link {
+            &__image {
+              width: 35%;
+              height: auto;
             }
+          }
         }
+      }
 
-        .title {
-            font-size: 1.5rem;
-        }
+      .mint {
+        .card {
+          flex-direction: column;
 
-        .modal {
-        
-            .item {
-                width: 300px;
-        
-                &__title {
-                    font-size: 1.5rem;
-                }
-        
-                .form {
-        
-                    &__text, &__email {
-                        font-size: 1.2rem;
-                    }
-                }
+          .item {
+            flex-direction: column;
+
+            &-text {
+              margin-top: 25px;
+
+              &__title {
+                font-size: 1rem;
+              }
+
+              &__description {
+                font-size: 0.9rem;
+              }
             }
+          }
         }
+      }
+
+      .progress {
+        &-item {
+          &__title {
+            font-size: 2rem;
+          }
+
+          &__description {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .about {
+        .content {
+          .info {
+            &__title {
+              font-size: 1.3rem;
+            }
+
+            &__description {
+              font-size: 0.8rem;
+            }
+
+            .advances {
+              &-item {
+                &__number {
+                  font-size: 1.1rem;
+                }
+
+                &__text {
+                  font-size: 0.7rem;
+                }
+              }
+
+              .item-image {
+                &__image {
+                  padding: 5px;
+
+                  img {
+                    width: 30px;
+                    height: auto;
+                  }
+                }
+
+                &__text {
+                  font-size: 0.7rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .works {
+        .cards {
+          margin-top: 25px;
+
+          &-item {
+            margin-top: 25px;
+
+            &__tag {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+
+      .roadmap {
+        .cards {
+          .item {
+            &-top {
+              &__circle {
+                span {
+                  font-size: 0.9rem;
+                }
+              }
+            }
+
+            &__title {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+
+      .faq {
+        .list {
+          &-item {
+            &__header {
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+
+      .discover {
+        &__description {
+          font-size: 0.9rem;
+        }
+      }
     }
+
+    .footer {
+      &-links {
+        flex-direction: column;
+
+        &__policy {
+          font-size: 0.7rem;
+        }
+
+        &__terms {
+          margin-left: 0;
+          margin-top: 15px;
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .modal {
+      .item {
+        width: 300px;
+
+        &__title {
+          font-size: 1.5rem;
+        }
+
+        .form {
+          &__text,
+          &__email {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,6 +1,6 @@
 function onHamb() {
   const hamb = document.querySelector(".hamb"),
-    nav = document.querySelector(".navbar-list");
+    nav = document.querySelector(".nav-menu");
 
   hamb.addEventListener("click", () => {
     hamb.classList.toggle("active");
@@ -9,7 +9,7 @@ function onHamb() {
     document.body.classList.toggle("overflowHidden");
   });
 
-  document.querySelectorAll(".list-item__link").forEach((item) => {
+  document.querySelectorAll(".nav-menu__item a").forEach((item) => {
     item.addEventListener("click", () => {
       hamb.classList.remove("active");
       nav.classList.remove("activeNav");
